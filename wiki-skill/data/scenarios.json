@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-29",
+  "scenarios": [
+    {
+      "id": "life_service",
+      "name": "生活服务",
+      "description": "本地生活服务行业，如餐饮、美发、家政、教育培训、房产、汽车服务等。"
+    },
+    {
+      "id": "merchant_goods",
+      "name": "商家商品",
+      "description": "商家及其在直播间/橱窗售卖的商品、商品介绍与营销相关。"
+    },
+    {
+      "id": "vulgar",
+      "name": "低俗",
+      "description": "涉及低俗、软色情、擦边等需要机审治理的内容场景。"
+    },
+    {
+      "id": "live_term",
+      "name": "直播术语",
+      "description": "直播运营/玩法相关的通用行业术语。"
+    },
+    {
+      "id": "business_term",
+      "name": "经营术语",
+      "description": "电商/直播经营与数据指标相关术语。"
+    },
+    {
+      "id": "machine_audit",
+      "name": "机审场景",
+      "description": "机器审核（机审）判定中使用的名词、判定项与边界条件。"
+    },
+    {
+      "id": "traffic_diversion",
+      "name": "导流",
+      "description": "泛导流/私域导流/薅流量等违规引流相关名词。"
+    }
+  ]
+}

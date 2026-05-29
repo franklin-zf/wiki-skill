@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wiki Skill"
+  short_description: "面向 LLM 的名词解释知识库，用于机审/直播/PE 设计"
+  default_prompt: "使用 wiki-skill 查询或维护名词 Wiki：按场景/关键词检索术语，或为机审/直播场景拼装 prompt 名词解释片段。"

@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-30",
+  "terms": [
+    {
+      "id": "t_fudai",
+      "name": "福袋",
+      "aliases": [
+        "自定义福袋",
+        "普通福袋"
+      ],
+      "definition": "直播间的核心互动玩法工具之一。主播可设置参与门槛（如关注主播、加入粉丝团、发送指定评论），系统在满足条件的观众中随机抽取幸运者发放奖品。分为自定义福袋（自定义实物/虚拟奖品，需报白后使用）与普通福袋（仅发放抖币，无需报白）。主要作用是拉动粉丝停留、提升直播间人气与互动数据。",
+      "scenarios": [
+        "直播术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.changbiyuan.com/douyin/zhibo/2022/zhibo_1114/56631.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_biedan",
+      "name": "憋单",
+      "aliases": [
+        "憋库存"
+      ],
+      "definition": "一种拉长用户停留时长的营销策略。主播将高点击/高转化的福利商品以极具吸引力的低价挂上小黄车，通过话术持续营造福利真实性与“马上开款”的紧张感，却迟迟不放出库存，把想薅羊毛的用户“憋”在直播间，以提升停留时长、拉高在线人数、积蓄流量权重，为后续爆单蓄势。通常单次控制在 5-6 分钟左右便放单。",
+      "scenarios": [
+        "直播术语",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.changbiyuan.com/douyin/zhibo/2022/zhibo_1114/56631.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_guokuan",
+      "name": "过款",
+      "aliases": [
+        "讲款"
+      ],
+      "definition": "主播按既定脚本/顺序，向观众依次介绍并讲解直播间陈列商品的过程。强调按节奏逐款展示卖点、引导下单；现代直播常结合实时评论分析动态调整讲解重点或切换款式。",
+      "scenarios": [
+        "直播术语",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.renrendoc.com/paper/523204023.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_kongchang",
+      "name": "控场",
+      "aliases": [
+        "场控"
+      ],
+      "definition": "由中控或直播负责人配合主播管理直播节奏、数据与氛围的行为。包括上架商品、调整价格、发放优惠券、监测实时转化数据、统计中奖粉丝，以及在突发情况下引导主播调整节奏，确保直播流程顺畅。",
+      "scenarios": [
+        "直播术语",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.80tg.com/news/29095.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_zhibojian_huashu",
+      "name": "直播间话术",
+      "aliases": [
+        "话术"
+      ],
+      "definition": "为主播与中控设计的系统性引导词，旨在建立信任、激发兴趣并促成下单。常见话术体系包括欢迎话术、宣传话术、产品价值塑造话术、憋单话术、催单（逼单）话术、感谢话术等。需注意话术合规性，规避绝对化用语等违规词。",
+      "scenarios": [
+        "直播术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.changbiyuan.com/douyin/zhibo/2022/zhibo_1114/56631.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_zhubo_zhu",
+      "name": "助播",
+      "aliases": [
+        "副播"
+      ],
+      "definition": "直播间的副播/主播助理，主要职责包括补充产品信息点、回答客户问题、引导关注、介绍下单流程以及协助调动直播间氛围；当主播需要离开时临时担任主播角色。",
+      "scenarios": [
+        "直播术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.80tg.com/news/29095.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_zhongkong",
+      "name": "中控",
+      "aliases": [],
+      "definition": "在直播过程中负责中控台操作的岗位，例如上架产品、修改价格、发放红包及优惠券、统计活动中奖粉丝、推送视频和贴纸，并与主播配合调动直播间氛围。",
+      "scenarios": [
+        "直播术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.80tg.com/news/29095.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "seed"
+      }
+    },
+    {
+      "id": "t_dianpu_huanjing",
+      "name": "店铺环境/店铺场景判定",
+      "aliases": [
+        "店铺环境",
+        "店铺场景",
+        "店铺场景展示"
+      ],
+      "definition": "机审中用于认定直播/视频内容是否展示了真实店铺经营环境的判定项。用于识别商家是否通过展示店铺空间来佐证经营资质或营造信任。",
+      "scenarios": [
+        "机审场景",
+        "商家商品"
+      ],
+      "premise": "所有涉及“店铺环境”“店铺场景”的判定，均需满足“抽帧图集中存在两张及以上图片展示店铺内不同区域”。不同区域定义：功能分区明确差异（如前厅与后厨、服装区与试衣间、货架区与收银台等），或镜头明显切换至独立空间，而非同一区域的角度微调、人物动作/表情变化。若所有抽帧图集仅展示同一固定区域（无功能分区差异、无独立空间切换），则一律不认定为“店铺环境/店铺场景展示”。",
+      "meta": {
+        "source": "用户录入（内部机审规则）",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "user"
+      }
+    },
+    {
+      "id": "t_yingxiao_xinxi",
+      "name": "营销信息",
+      "aliases": [
+        "商品营销",
+        "营销动作"
+      ],
+      "definition": "机审中用于认定直播间内容存在商品推广/营销行为的判定项。指直播间元素（如画面图片、ASR 语音转写文本等）中存在明确的商品介绍、商品营销等动作。",
+      "scenarios": [
+        "机审场景",
+        "商家商品"
+      ],
+      "premise": "需在直播间元素中（如图片、ASR 文本）存在“明确”的商品介绍或商品营销动作方可认定；模糊、无指向性的内容不计入。",
+      "meta": {
+        "source": "用户录入（内部机审规则）",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-29",
+        "updated_at": "2026-05-29",
+        "updated_by": "user"
+      }
+    },
+    {
+      "id": "t_ab0f78db0d",
+      "name": "小黄车",
+      "aliases": [
+        "购物车",
+        "黄车"
+      ],
+      "definition": "直播间/短视频中的购物车功能入口（图标为黄色购物袋），观众点击可查看主播讲解的在售商品并下单。是直播带货成交的核心承接组件。",
+      "scenarios": [
+        "直播术语",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "https://www.80tg.com/news/29095.html",
+        "source_type": "web",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user"
+      }
+    }
+  ]
+}
