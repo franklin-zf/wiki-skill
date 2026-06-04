@@ -220,6 +220,1158 @@
         "updated_at": "2026-05-30",
         "updated_by": "user"
       }
+    },
+    {
+      "id": "t_m1_traffic_pool",
+      "name": "M1 内容流量池",
+      "aliases": [
+        "M1",
+        "内容池",
+        "内容流量池"
+      ],
+      "definition": "公开行业语境中，M1 通常指抖音经营里的内容流量池，即短视频、探店内容、直播切片等内容经推荐系统分发获得的自然曝光；其核心影响因素偏内容质量、完播、互动、停留与账号/内容标签匹配。",
+      "scenarios": [
+        "流量场景",
+        "抖音",
+        "内容流量"
+      ],
+      "industries": [
+        "抖音",
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "流量分层",
+        "内容流量池",
+        "自然推荐"
+      ],
+      "premise": "该解释来自公开行业文章对“三池分层”的用法归纳，未核验为字节跳动官方或内部统一口径；若内部文档另有定义，以内部口径为准。",
+      "meta": {
+        "source": "https://www.sina.cn/news/detail/5280075110417994.html; https://zhuanlan.zhihu.com/p/1987645479157245216; https://www.oceanengine.com/faq/douyin-llc.html",
+        "source_type": "web",
+        "validity": "pending",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "公开来源口径；巨量引擎页面支持抖音存在付费推广、粉丝观看、平台自然推荐等流量来源，但未直接给出 M1/M2/M3 命名。",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "t_m2_traffic_pool",
+      "name": "M2 交易流量池",
+      "aliases": [
+        "M2",
+        "交易池",
+        "购物流量池",
+        "交易流量池",
+        "电商流量池"
+      ],
+      "definition": "公开行业语境中，M2 通常指抖音经营里的交易/购物/电商流量池，即商品、团购、店铺、搜索与交易承接场景中的自然曝光；其分发更关注商品或套餐的点击、成交、核销、评价、复购等交易履约信号。",
+      "scenarios": [
+        "流量场景",
+        "抖音",
+        "交易流量",
+        "团购",
+        "商家商品"
+      ],
+      "industries": [
+        "抖音电商",
+        "生活服务",
+        "团购"
+      ],
+      "tags": [
+        "流量分层",
+        "交易流量池",
+        "购物流量池",
+        "团购核销",
+        "商家商品"
+      ],
+      "premise": "该解释来自公开行业文章对“三池分层”的用法归纳，未核验为字节跳动官方或内部统一口径；生活服务场景中常与团购套餐、核销、评价和复购等指标绑定，其他业务线可能不同。",
+      "meta": {
+        "source": "https://www.sina.cn/news/detail/5280075110417994.html; https://zhuanlan.zhihu.com/p/1987645479157245216; https://www.oceanengine.com/resource/douyin/search",
+        "source_type": "web",
+        "validity": "pending",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "公开来源口径；巨量引擎搜索广告页面支持搜索可承接店铺交易、商品推广等交易场景，但未直接给出 M2 命名。",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "t_m3_traffic_pool",
+      "name": "M3 广告流量池",
+      "aliases": [
+        "M3",
+        "广告池",
+        "广告流量池",
+        "付费流量池"
+      ],
+      "definition": "公开行业语境中，M3 通常指抖音经营里的广告/付费流量池，即通过 DOU+、千川、信息流广告、搜索广告等付费推广工具获得的确定性曝光和转化流量。",
+      "scenarios": [
+        "流量场景",
+        "抖音",
+        "广告流量"
+      ],
+      "industries": [
+        "巨量引擎",
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "流量分层",
+        "广告流量池",
+        "付费推广",
+        "千川",
+        "DOU+"
+      ],
+      "premise": "该解释来自公开行业文章对“三池分层”的用法归纳，未核验为字节跳动官方或内部统一口径；不同投放产品、账户和业务线可能拆分更细。",
+      "meta": {
+        "source": "https://www.sina.cn/news/detail/5280075110417994.html; https://zhuanlan.zhihu.com/p/1987645479157245216; https://www.oceanengine.com/faq/douyin-llc.html",
+        "source_type": "web",
+        "validity": "pending",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "公开来源口径；巨量引擎页面支持抖音付费推广包括开屏广告、信息流广告、搜索广告、DOU+ 等，但未直接给出 M3 命名。",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "t_187da83771",
+      "name": "POI",
+      "aliases": [
+        "Point of Interest",
+        "兴趣点"
+      ],
+      "definition": "Point of Interest，兴趣点。指物理世界真实地点在线上的数字化展示，是地理信息系统基本单元。",
+      "scenarios": [
+        "生活服务",
+        "抖音"
+      ],
+      "premise": "POI 数据通常包含空间信息（经纬度、行政区划、邮编）与深度信息（营业时间、价格范围、环境、联系方式等）。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "POI",
+        "地理位置",
+        "门店"
+      ]
+    },
+    {
+      "id": "t_57ab90959e",
+      "name": "门店POI",
+      "aliases": [],
+      "definition": "与抖音生活服务有商业合作的门店型 POI，例如酒店、景区、餐厅等可承接交易或经营动作的真实门店。",
+      "scenarios": [
+        "生活服务",
+        "团购"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "POI",
+        "门店",
+        "团购承接"
+      ]
+    },
+    {
+      "id": "t_e34ea0cdfa",
+      "name": "区域POI",
+      "aliases": [],
+      "definition": "城市、街道等地理区域型 POI，用于表达一片区域而非单个经营门店。",
+      "scenarios": [
+        "生活服务",
+        "抖音"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "POI",
+        "地理区域"
+      ]
+    },
+    {
+      "id": "t_0940e368bb",
+      "name": "独立POI",
+      "aliases": [],
+      "definition": "与生活服务无商业合作的公共地点型 POI，例如学校、银行、政府单位等。",
+      "scenarios": [
+        "生活服务",
+        "抖音"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "POI",
+        "公共地点"
+      ]
+    },
+    {
+      "id": "t_a0a9c3aaf5",
+      "name": "认领POI",
+      "aliases": [],
+      "definition": "品牌认定某地理位置专柜或门店为专属经营点，后续团购交易均在该 POI 发生。",
+      "scenarios": [
+        "生活服务",
+        "团购"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "POI",
+        "门店认领",
+        "团购承接"
+      ]
+    },
+    {
+      "id": "t_c011a0946e",
+      "name": "泛导流",
+      "aliases": [],
+      "definition": "通过非精准流量引入、交易转化低效或违规导流的直播间，平台会限制其推荐流量。",
+      "scenarios": [
+        "导流",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "典型特征：用与商品无关的内容吸引点击，但实际销售商品与内容不匹配，看播转化高、交易转化低、造成流量浪费。违规表现包括引导去主页/橱窗/店铺购买非当前挂载商品、引导私信/进群/看签名获取联系方式、弱化团购券权益而强调线下到店购买/咨询、通过短视频/主页承接流量导向站外交易。判定标准：作者违规浓度（违规直播间/进审直播间）≥0.5 判定为泛导流作者。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务",
+        "抖音电商"
+      ],
+      "tags": [
+        "导流治理",
+        "交易转化低效",
+        "直播治理"
+      ]
+    },
+    {
+      "id": "t_0cf36ed226",
+      "name": "到店",
+      "aliases": [],
+      "definition": "抖音生活服务核心业务形态，涵盖线下吃喝玩乐的信息查询、团购购买、预约服务。",
+      "scenarios": [
+        "生活服务",
+        "团购"
+      ],
+      "premise": "覆盖餐饮、丽人、休闲娱乐、酒店、景点门票等，不含外卖。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "到店业务",
+        "团购",
+        "本地生活"
+      ]
+    },
+    {
+      "id": "t_34c17f3b97",
+      "name": "到店扫码",
+      "aliases": [],
+      "definition": "商家摆放线下优惠码，引导到店用户扫码关注门店并下单，沉淀粉丝并提升线上流量。",
+      "scenarios": [
+        "生活服务",
+        "团购"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "到店业务",
+        "扫码下单",
+        "门店经营"
+      ]
+    },
+    {
+      "id": "t_5e8ca3e396",
+      "name": "到店摆",
+      "aliases": [],
+      "definition": "用户搜索下单或购买代金券后，核销时间与支付时间相差小于 1 小时的交易行为。",
+      "scenarios": [
+        "生活服务",
+        "团购",
+        "交易流量"
+      ],
+      "premise": "源文档表达为：核销时间-支付时间<1小时。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "到店业务",
+        "核销",
+        "交易行为"
+      ]
+    },
+    {
+      "id": "t_e7d31ece45",
+      "name": "核销",
+      "aliases": [],
+      "definition": "商家确认消费者已完成商品或服务兑换使用，并通过券码验证实现的动作，是线下服务交易闭环的核心节点。",
+      "scenarios": [
+        "生活服务",
+        "团购",
+        "交易流量"
+      ],
+      "premise": "常见流程：商家添加核销员并绑定门店范围；核销员登录抖音 APP 扫描用户电子凭证二维码，核对信息后确认核销。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "核销",
+        "交易闭环",
+        "券码验证"
+      ]
+    },
+    {
+      "id": "t_c3a526bbce",
+      "name": "有效核销GMV",
+      "aliases": [],
+      "definition": "支付且结算的订单金额，包含消费者实付金额以及除商家自补外的其他补贴，例如平台通用券。",
+      "scenarios": [
+        "生活服务",
+        "团购",
+        "交易流量"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "GMV",
+        "核销",
+        "交易指标"
+      ]
+    },
+    {
+      "id": "t_9586cec9de",
+      "name": "实景直播",
+      "aliases": [],
+      "definition": "真实人物在真实场景中开展的直播，例如门店、景区、街头、演唱会现场等场景的直播。",
+      "scenarios": [
+        "生活服务",
+        "直播术语",
+        "机审场景"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "实景直播",
+        "直播场景",
+        "机审判定"
+      ]
+    },
+    {
+      "id": "t_c1a51fde26",
+      "name": "实景搭建",
+      "aliases": [],
+      "definition": "通过直播间前景、中景、后景装置布置和灯光调整，搭建符合特定场景的实体直播间。",
+      "scenarios": [
+        "生活服务",
+        "直播术语",
+        "机审场景"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "实景直播",
+        "直播间布置"
+      ]
+    },
+    {
+      "id": "t_bb82dd4552",
+      "name": "固定机位",
+      "aliases": [],
+      "definition": "拍摄位置、角度、高度固定，无有效移动变化的直播拍摄方式。",
+      "scenarios": [
+        "直播术语",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "实景直播",
+        "机位",
+        "低质直播判定"
+      ]
+    },
+    {
+      "id": "t_3f9285f74d",
+      "name": "单一画面",
+      "aliases": [],
+      "definition": "镜头长时间对准某一特定场景或物体的直播画面。",
+      "scenarios": [
+        "直播术语",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "实景直播",
+        "低质直播判定"
+      ]
+    },
+    {
+      "id": "t_6da1ce3eec",
+      "name": "互动",
+      "aliases": [],
+      "definition": "实景直播判定语境中，指主播口播介绍商品、问候或回复观众问题，或主播/房管在评论区回应观众。",
+      "scenarios": [
+        "直播术语",
+        "机审场景"
+      ],
+      "premise": "该词在不同业务中含义较广；本词条限定于源文档的实景直播/机审判定语境。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "实景直播",
+        "实时互动"
+      ]
+    },
+    {
+      "id": "t_dcc583e7de",
+      "name": "抖音来客",
+      "aliases": [],
+      "definition": "抖音生活服务商家经营平台。商家入驻后可发布团购商品、绑定抖音号，并通过短视频、直播、线上门店等渠道展示商品，提升线下门店客源和销量。",
+      "scenarios": [
+        "生活服务",
+        "抖音",
+        "团购",
+        "商家商品"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "商家经营平台",
+        "团购商品",
+        "线上门店"
+      ]
+    },
+    {
+      "id": "t_9cdcddf33e",
+      "name": "巨量本地推",
+      "aliases": [],
+      "definition": "抖音生活服务一站式营销平台，为商家、达人、代理商提供广告投放能力，通过推广短视频与直播间，实现门店获客、团购成单、抖音号涨粉等营销目标。",
+      "scenarios": [
+        "生活服务",
+        "广告流量",
+        "抖音"
+      ],
+      "premise": "源文档说明其有 App、PC、抖音端三个入口。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务",
+        "巨量引擎"
+      ],
+      "tags": [
+        "本地推",
+        "广告投放",
+        "门店获客",
+        "团购成单"
+      ]
+    },
+    {
+      "id": "t_9b078f8da0",
+      "name": "入团入推",
+      "aliases": [],
+      "definition": "品牌方入驻抖音生活服务来客平台并参与团购活动，同时开通本地推投放广告的完整链路。",
+      "scenarios": [
+        "生活服务",
+        "团购",
+        "广告流量"
+      ],
+      "premise": "源文档链路：入驻来客→认领门店 POI→开通本地推。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "入驻链路",
+        "本地推",
+        "团购"
+      ]
+    },
+    {
+      "id": "t_af9744e82d",
+      "name": "营销钱包",
+      "aliases": [],
+      "definition": "抖音来客后台中商家发布货补的功能模块，货补形式包括品牌代金券、品牌补贴券等。",
+      "scenarios": [
+        "生活服务",
+        "商家商品"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "商家工具",
+        "货补",
+        "品牌补贴"
+      ]
+    },
+    {
+      "id": "t_6a07fae64b",
+      "name": "职人",
+      "aliases": [],
+      "definition": "商家认证的内部达人，多为门店员工。认证后可零门槛获得抖音带货能力，通过短视频或直播带货，或线下通过职人码引导消费者扫码下单。",
+      "scenarios": [
+        "生活服务",
+        "商家商品",
+        "直播术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "商家达人",
+        "职人码",
+        "带货"
+      ]
+    },
+    {
+      "id": "t_9385f7f3ae",
+      "name": "低质实景直播",
+      "aliases": [],
+      "definition": "实景拍摄直播间中，无主播面部出镜，存在主播实时互动，但长时间固定机位拍摄单一画面、缺乏有效信息的直播类型。",
+      "scenarios": [
+        "内容安全",
+        "机审场景",
+        "生活服务"
+      ],
+      "premise": "豁免情况：图文信息为帮助用户理解的信息类图文，并配合实时讲解，且仅包含酒旅、教育、演出赛事、房产四类。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "低质直播",
+        "实景直播",
+        "机审判定"
+      ]
+    },
+    {
+      "id": "t_90e7e6c564",
+      "name": "消极直播",
+      "aliases": [],
+      "definition": "实景拍摄直播间中，长时间展示固定机位拍摄经营画面，且无主播出镜和实时互动的直播类型。",
+      "scenarios": [
+        "内容安全",
+        "机审场景",
+        "生活服务"
+      ],
+      "premise": "豁免情况：主播出镜时长≥40s、媒体房/政媒号直播、画面具备观赏性或信息价值。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "消极直播",
+        "实景直播",
+        "机审判定"
+      ]
+    },
+    {
+      "id": "t_518fa8868d",
+      "name": "不鼓励实景直播",
+      "aliases": [],
+      "definition": "平台不鼓励推荐的实景直播类型，通常表现为长时间固定机位、画面变化少，或有主播出镜但无实时互动。",
+      "scenarios": [
+        "内容安全",
+        "机审场景",
+        "生活服务"
+      ],
+      "premise": "满足任一即可：1. 实景直播间无主播面部出镜，有实时互动，但长时间固定机位拍摄商品/门头，画面变化少；2. 实景直播间长时间固定机位拍摄，有主播面部出镜但无实时互动。豁免包括住宿、度假旅游服务、交通出行、游玩等特定商品类目，以及媒体房/政媒号直播、制作/服务过程展示、演出现场/教学/竞技比赛等不便实时互动的场景。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "生活服务"
+      ],
+      "tags": [
+        "不鼓励直播",
+        "实景直播",
+        "机审判定"
+      ]
+    },
+    {
+      "id": "t_146fcb20ff",
+      "name": "薅流量",
+      "aliases": [],
+      "definition": "通过博眼球、卖惨、高能开头等非常规手段获取平台流量，且不符合平台内容生态导向的内容生产行为。",
+      "scenarios": [
+        "内容安全",
+        "机审场景",
+        "流量场景"
+      ],
+      "premise": "常见违规类型包括博眼球、虚假人设卖惨、高能开头吸睛带货三类；具体判定需结合《薅流量违规判定规则》。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音",
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "薅流量",
+        "内容生态治理",
+        "违规判定"
+      ]
+    },
+    {
+      "id": "t_241218ec35",
+      "name": "Dryrun",
+      "aliases": [
+        "dry run",
+        "灰度测试"
+      ],
+      "definition": "策略上线前的灰度测试阶段。策略仅对小流量生效，不实际执行处罚，用于验证策略效果、准确率、召回率等指标，确认达标后再全量上线。",
+      "scenarios": [
+        "机审运营",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "内容安全"
+      ],
+      "tags": [
+        "策略灰度",
+        "上线验证",
+        "评估指标"
+      ]
+    },
+    {
+      "id": "t_6fb98831cb",
+      "name": "精确率",
+      "aliases": [
+        "Precision",
+        "精确率（Precision）"
+      ],
+      "definition": "机审策略判定为违规的内容中，实际真正违规的比例，用于衡量策略准确性，避免误杀正常内容。",
+      "scenarios": [
+        "机审运营",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "计算公式：精确率 = 真违规数 / （真违规数 + 误判数）。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "内容安全"
+      ],
+      "tags": [
+        "Precision",
+        "评估指标",
+        "误判"
+      ]
+    },
+    {
+      "id": "t_2d446a6988",
+      "name": "召回率",
+      "aliases": [
+        "Recall",
+        "召回率（Recall）"
+      ],
+      "definition": "实际所有违规内容中，被机审策略正确识别出来的比例，用于衡量策略覆盖能力，避免漏过违规内容。",
+      "scenarios": [
+        "机审运营",
+        "机审场景",
+        "内容安全"
+      ],
+      "premise": "计算公式：召回率 = 真违规数 / （真违规数 + 漏判数）。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "内容安全"
+      ],
+      "tags": [
+        "Recall",
+        "评估指标",
+        "漏判"
+      ]
+    },
+    {
+      "id": "t_579becebf8",
+      "name": "Token节降",
+      "aliases": [
+        "Token 节降",
+        "token节降"
+      ],
+      "definition": "通过优化大模型调用策略、prompt 精简、缓存复用等方式，降低大模型调用时的 token 消耗量，从而降低推理成本并提升系统效率。",
+      "scenarios": [
+        "机审运营",
+        "机审场景"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "内容安全"
+      ],
+      "tags": [
+        "LLM成本",
+        "Prompt优化",
+        "推理效率"
+      ]
+    },
+    {
+      "id": "t_3576bf9147",
+      "name": "商品卡",
+      "aliases": [],
+      "definition": "抖音电商中展示商品信息的卡片式载体，包含商品图片、标题、价格、销量、店铺等核心信息，是用户浏览、点击购买商品的核心入口。",
+      "scenarios": [
+        "电商商品",
+        "商家商品",
+        "交易流量"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音电商"
+      ],
+      "tags": [
+        "商品卡",
+        "商品入口",
+        "交易承接"
+      ]
+    },
+    {
+      "id": "t_6665e37610",
+      "name": "SKU",
+      "aliases": [
+        "Stock Keeping Unit",
+        "库存保有单位"
+      ],
+      "definition": "Stock Keeping Unit，库存保有单位。库存管理的最小单位，对应每一款商品，并用于区分不同规格、颜色、版本等属性。",
+      "scenarios": [
+        "电商商品",
+        "商家商品"
+      ],
+      "premise": "每个 SKU 对应唯一的库存编码。",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音电商"
+      ],
+      "tags": [
+        "SKU",
+        "库存管理",
+        "商品规格"
+      ]
+    },
+    {
+      "id": "t_6defa2e232",
+      "name": "达人带货",
+      "aliases": [],
+      "definition": "拥有一定粉丝量的创作者（达人）通过短视频、直播等形式推广商品，引导用户购买，并从成交订单中获取佣金收益的商业模式。",
+      "scenarios": [
+        "电商商品",
+        "商家商品",
+        "直播术语",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "达人",
+        "带货",
+        "佣金"
+      ]
+    },
+    {
+      "id": "t_394ab37faf",
+      "name": "佣金",
+      "aliases": [],
+      "definition": "达人带货成交后，按照约定比例从商品销售额中获得的收益，是达人带货的核心收入来源。",
+      "scenarios": [
+        "电商商品",
+        "商家商品",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "佣金",
+        "达人带货",
+        "收益"
+      ]
+    },
+    {
+      "id": "t_2761822f1e",
+      "name": "坑位费",
+      "aliases": [],
+      "definition": "商家邀请达人在直播或短视频中推广商品时，预先支付给达人的固定费用，与最终销量无关，是头部达人的重要收入组成部分。",
+      "scenarios": [
+        "电商商品",
+        "商家商品",
+        "经营术语"
+      ],
+      "premise": "",
+      "meta": {
+        "source": "用户提供文档：/Users/zhangfeng/Downloads/抖音生服&机审&电商专有名词解释字典.md",
+        "source_type": "user",
+        "validity": "verified",
+        "version": 1,
+        "created_at": "2026-05-30",
+        "updated_at": "2026-05-30",
+        "updated_by": "user",
+        "source_note": "用户提供文档标注为官方来源整理"
+      },
+      "industries": [
+        "抖音电商",
+        "生活服务"
+      ],
+      "tags": [
+        "坑位费",
+        "达人合作",
+        "固定费用"
+      ]
     }
   ]
 }

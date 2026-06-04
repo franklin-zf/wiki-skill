@@ -1,16 +1,46 @@
 {
   "version": 1,
-  "updated_at": "2026-05-29",
+  "updated_at": "2026-05-30",
   "scenarios": [
+    {
+      "id": "douyin",
+      "name": "抖音",
+      "description": "抖音内容、搜索、直播、店铺、商品与经营链路相关场景。"
+    },
+    {
+      "id": "traffic_scene",
+      "name": "流量场景",
+      "description": "内容分发、交易承接、广告投放、搜索与推荐等流量获取和分配场景。"
+    },
     {
       "id": "life_service",
       "name": "生活服务",
       "description": "本地生活服务行业，如餐饮、美发、家政、教育培训、房产、汽车服务等。"
     },
     {
+      "id": "group_buying",
+      "name": "团购",
+      "description": "团购券、套餐、核销、评价、复购与到店消费承接相关场景。"
+    },
+    {
       "id": "merchant_goods",
       "name": "商家商品",
       "description": "商家及其在直播间/橱窗售卖的商品、商品介绍与营销相关。"
+    },
+    {
+      "id": "content_traffic",
+      "name": "内容流量",
+      "description": "短视频、直播切片、探店内容、推荐流等由内容质量和互动驱动的流量。"
+    },
+    {
+      "id": "transaction_traffic",
+      "name": "交易流量",
+      "description": "商品、团购、搜索、店铺页、交易行为与履约数据驱动的流量。"
+    },
+    {
+      "id": "paid_traffic",
+      "name": "广告流量",
+      "description": "DOU+、千川、信息流广告、搜索广告等付费推广获得的流量。"
     },
     {
       "id": "vulgar",
@@ -36,6 +66,21 @@
       "id": "traffic_diversion",
       "name": "导流",
       "description": "泛导流/私域导流/薅流量等违规引流相关名词。"
+    },
+    {
+      "id": "content_safety",
+      "name": "内容安全",
+      "description": "内容生态治理、违规识别、低质/消极内容与安全策略相关场景。"
+    },
+    {
+      "id": "audit_operation",
+      "name": "机审运营",
+      "description": "机审策略上线、灰度、评估、精确率、召回率、成本优化等运营场景。"
+    },
+    {
+      "id": "ecommerce_goods",
+      "name": "电商商品",
+      "description": "抖音电商商品、库存、达人带货、佣金、坑位费与商品卡相关场景。"
     }
   ]
 }

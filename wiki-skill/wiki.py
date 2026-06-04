@@ -64,17 +64,37 @@ def make_id(name):
 
 
 # ---------------------------------------------------------------- query
-def _match(term, keyword, scenario, validity):
+def _list_has(value, items):
+    if not value:
+        return True
+    return value in items or _norm(value) in [_norm(x) for x in items]
+
+
+def _optional_string_list(term, field):
+    value = term.get(field, [])
+    return value if isinstance(value, list) else []
+
+
+def _match(term, keyword, scenario, validity, industry=None, tag=None):
     if validity and term.get("meta", {}).get("validity") != validity:
         return False
     if scenario:
-        scs = term.get("scenarios", [])
-        if scenario not in scs and _norm(scenario) not in [_norm(x) for x in scs]:
+        if not _list_has(scenario, term.get("scenarios", [])):
+            return False
+    if industry:
+        if not _list_has(industry, _optional_string_list(term, "industries")):
+            return False
+    if tag:
+        if not _list_has(tag, _optional_string_list(term, "tags")):
             return False
     if keyword:
         k = _norm(keyword)
         haystack = _norm(term.get("name", "")) + _norm(term.get("definition", "")) \
-            + _norm(term.get("premise", "")) + "".join(_norm(a) for a in term.get("aliases", []) or [])
+            + _norm(term.get("premise", "")) \
+            + "".join(_norm(a) for a in term.get("aliases", []) or []) \
+            + "".join(_norm(s) for s in term.get("scenarios", []) or []) \
+            + "".join(_norm(i) for i in _optional_string_list(term, "industries")) \
+            + "".join(_norm(t) for t in _optional_string_list(term, "tags"))
         if k not in haystack:
             return False
     return True
@@ -85,6 +105,10 @@ def render_md(term):
     alias_str = f"（别名：{aliases}）" if aliases else ""
     lines = [f"### {term['name']}{alias_str}"]
     lines.append(f"- **所属场景**：{ '、'.join(term.get('scenarios', [])) }")
+    if term.get("industries"):
+        lines.append(f"- **行业/业务域**：{ '、'.join(term.get('industries', [])) }")
+    if term.get("tags"):
+        lines.append(f"- **标签**：{ '、'.join(term.get('tags', [])) }")
     lines.append(f"- **定义**：{term.get('definition', '')}")
     if term.get("premise"):
         lines.append(f"- **判定前提/边界**：{term['premise']}")
@@ -103,6 +127,13 @@ def render_prompt(term):
     if aliases:
         name = f"{name}（亦称：{ '、'.join(aliases) }）"
     s = f"- 【{name}】{term.get('definition', '')}"
+    context = []
+    if term.get("industries"):
+        context.append(f"行业/业务域：{ '、'.join(term.get('industries', [])) }")
+    if term.get("tags"):
+        context.append(f"标签：{ '、'.join(term.get('tags', [])) }")
+    if context:
+        s += f"（{ '；'.join(context) }）"
     if term.get("premise"):
         s += f" 判定前提：{term['premise']}"
     return s
@@ -110,7 +141,10 @@ def render_prompt(term):
 
 def cmd_query(args):
     terms, _ = load_terms()
-    hits = [t for t in terms if _match(t, args.keyword, args.scenario, args.validity)]
+    hits = [
+        t for t in terms
+        if _match(t, args.keyword, args.scenario, args.validity, args.industry, args.tag)
+    ]
     if args.format == "json":
         print(json.dumps(hits, ensure_ascii=False, indent=2))
         return 0
@@ -138,8 +172,10 @@ def _build_term_from_args(args):
     name = args.name.strip()
     scenarios = [s.strip() for s in args.scenarios.split(",") if s.strip()]
     aliases = [a.strip() for a in (args.aliases or "").split(",") if a.strip()]
+    industries = [i.strip() for i in (args.industries or "").split(",") if i.strip()]
+    tags = [t.strip() for t in (args.tags or "").split(",") if t.strip()]
     today = date.today().isoformat()
-    return {
+    term = {
         "id": make_id(name),
         "name": name,
         "aliases": aliases,
@@ -156,6 +192,11 @@ def _build_term_from_args(args):
             "updated_by": args.updated_by or "user",
         },
     }
+    if industries:
+        term["industries"] = industries
+    if tags:
+        term["tags"] = tags
+    return term
 
 
 def _find_duplicate(new_term, terms):
@@ -214,6 +255,10 @@ def validate_term(term):
             errors.append(f"缺少必填字段 `{f}`")
     if not isinstance(term.get("scenarios", []), list) or not term.get("scenarios"):
         errors.append("`scenarios` 必须是非空列表")
+    for f in ("industries", "tags"):
+        if f in term:
+            if not isinstance(term[f], list) or any(not isinstance(x, str) or not x.strip() for x in term[f]):
+                errors.append(f"`{f}` 必须是字符串列表")
     meta = term.get("meta", {})
     if not isinstance(meta, dict):
         errors.append("`meta` 必须是对象")
@@ -274,14 +319,20 @@ def cmd_scenarios(args):
 
 def cmd_stats(args):
     terms, _ = load_terms()
-    by_validity, by_source = {}, {}
+    by_validity, by_source, by_industry, by_tag = {}, {}, {}, {}
     for t in terms:
         m = t.get("meta", {})
         by_validity[m.get("validity", "?")] = by_validity.get(m.get("validity", "?"), 0) + 1
         by_source[m.get("source_type", "?")] = by_source.get(m.get("source_type", "?"), 0) + 1
+        for i in _optional_string_list(t, "industries"):
+            by_industry[i] = by_industry.get(i, 0) + 1
+        for tag in _optional_string_list(t, "tags"):
+            by_tag[tag] = by_tag.get(tag, 0) + 1
     print(f"词条总数：{len(terms)}")
     print(f"按有效性：{by_validity}")
     print(f"按来源类型：{by_source}")
+    print(f"按行业/业务域：{by_industry}")
+    print(f"按标签：{by_tag}")
     return 0
 
 
@@ -292,6 +343,8 @@ def build_parser():
     q = sub.add_parser("query", help="检索词条")
     q.add_argument("--keyword", "-k", help="关键词（匹配名词/别名/定义/前提）")
     q.add_argument("--scenario", "-s", help="按场景过滤（场景名或 id）")
+    q.add_argument("--industry", "-i", help="按行业/业务域过滤")
+    q.add_argument("--tag", "-t", help="按标签过滤")
     q.add_argument("--validity", help="按有效性过滤：verified/pending/deprecated")
     q.add_argument("--format", "-f", choices=["md", "json", "prompt"], default="md",
                    help="输出格式：md(默认)/json/prompt(可嵌入系统提示)")
@@ -301,6 +354,8 @@ def build_parser():
     a.add_argument("--name", help="名词")
     a.add_argument("--definition", help="面向 LLM 的定义")
     a.add_argument("--scenarios", help="所属场景，逗号分隔")
+    a.add_argument("--industries", help="行业/业务域，逗号分隔", default="")
+    a.add_argument("--tags", help="标签，逗号分隔", default="")
     a.add_argument("--aliases", help="别名，逗号分隔", default="")
     a.add_argument("--premise", help="判定前提/边界条件", default="")
     a.add_argument("--source", help="来源（URL 或说明）", default="")

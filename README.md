@@ -1,19 +1,20 @@
 # wiki-skill
 
-面向 LLM 的名词解释知识库，用于机审 / 直播 / 电商 / 生活服务等场景的 PE（Prompt Engineering）设计。
+面向 LLM 的业务术语知识库，用于字节跳动流量场景、抖音、生活服务、团购、商家商品、直播、电商、内容安全、机审运营等场景的 PE（Prompt Engineering）设计。
 
 ## 结构
 
-```
-wiki-skill/          # 数据 + CLI + Codex Skill 主目录
+```text
+wiki-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── references/
+│   └── global-rules.md
 ├── wiki.py
 ├── data/
 │   ├── terms.json
 │   └── scenarios.json
 └── README.md
-.cursor/skills/wiki-skill/   # Cursor 项目级 skill 入口
 ```
 
 ## 快速开始
@@ -25,12 +26,21 @@ python3 wiki.py query -s 机审场景 -f prompt
 python3 wiki.py validate
 ```
 
+## 全局规则
+
+弱模型或新 agent 使用本 skill 时，先读：
+
+```text
+wiki-skill/references/global-rules.md
+```
+
+该文档定义查询、新增、导入、业务流归纳、校验和交付的固定阶段，并明确每个阶段的输入、输出、约束和停止条件。
+
 ## 安装为 Codex Skill
 
 ```bash
 git clone https://github.com/franklin-zf/wiki-skill.git
 cp -R wiki-skill ~/.codex/skills/wiki-skill
-# 或仅克隆后直接在仓库内使用
 ```
 
 ## License
