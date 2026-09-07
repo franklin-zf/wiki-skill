@@ -1,6 +1,12 @@
 # wiki-skill
 
+## 中文
+
 面向 LLM 的业务术语知识库，用于字节跳动流量场景、抖音、生活服务、团购、商家商品、直播、电商、内容安全、机审运营等场景的 PE（Prompt Engineering）设计。
+
+## English
+
+A business terminology knowledge base for LLM and prompt-engineering workflows. It supports term lookup, scenario-aware prompt context, imports, and validation for content, commerce, live-streaming, and machine-audit use cases.
 
 ## 结构
 
